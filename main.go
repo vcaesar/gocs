@@ -54,7 +54,11 @@ func run(name string) {
 	str := "go build " + flags() + " -o " + name + so() +
 		" -buildmode=c-shared " + name + ".go"
 
-	cmd.Run(str)
+	out, e, err := cmd.Run(str)
+	// if err != nil {
+	fmt.Println(out, e, err)
+	// }
+
 	fmt.Println("end")
 }
 
