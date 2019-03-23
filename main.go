@@ -27,16 +27,20 @@ func so() string {
 		return ".dll"
 	}
 
-	if runtime.GOOS == "linux" {
-		return ".so"
-	}
+	// if runtime.GOOS == "linux" {
+	// 	return ".so"
+	// }
 
-	return ""
+	return ".so"
 }
 
 func flags() string {
-	if runtime.GOOS == "darwin" {
-		return "-ldflags -s"
+	// if runtime.GOOS == "darwin" {
+	// 	return "-ldflags -s"
+	// }
+
+	if *fl {
+		return `-ldflags "-s -w"`
 	}
 
 	return ""
@@ -44,6 +48,7 @@ func flags() string {
 
 var (
 	fname = flag.String("n", "", "file name")
+	fl    = flag.Bool("f", true, "set flags")
 
 	dir = "./lib/"
 )
