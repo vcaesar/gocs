@@ -46,9 +46,18 @@ func flags() string {
 	return ""
 }
 
+func all() string {
+	if *al {
+		return "-a "
+	}
+
+	return ""
+}
+
 var (
 	fname = flag.String("n", "", "file name")
 	fl    = flag.Bool("f", true, "set flags")
+	al    = flag.Bool("a", false, "set build -a")
 
 	dir = "./lib/"
 )
@@ -56,7 +65,7 @@ var (
 func run(name string) {
 	fmt.Println("build c-shared start...")
 
-	str := "go build " + flags() + " -o " + name + so() +
+	str := "go build " + all() + flags() + " -o " + name + so() +
 		" -buildmode=c-shared " + name + ".go"
 
 	out, e, err := cmd.Run(str)
