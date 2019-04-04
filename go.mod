@@ -2,4 +2,4 @@ module github.com/vcaesar/gocs
 
 go 1.12
 
-require github.com/go-vgo/gt v0.0.0-20190323151237-dc47009b71a0
+require github.com/go-vgo/gt/cmd v0.0.0-20190404142521-9e923cadcb68
