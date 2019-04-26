@@ -13,4 +13,5 @@ gocs -n ${name}
 
 // set flags
 gocs -n ${name} -f=false
+gocs -n ${name} -a 
 ```
