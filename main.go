@@ -56,7 +56,7 @@ func all() string {
 
 var (
 	fname = flag.String("n", "", "file name")
-	fl    = flag.Bool("f", true, "set flags")
+	fl    = flag.Bool("f", false, "set -ld flags")
 	al    = flag.Bool("a", false, "set build -a")
 
 	dir = "./lib/"
