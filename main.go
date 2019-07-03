@@ -70,7 +70,7 @@ func run(name string) {
 
 	out, e, err := cmd.Run(str)
 	// if err != nil {
-	fmt.Println(out, e, err)
+	fmt.Println("cmd.Run err is: ", out, e, err)
 	// }
 
 	fmt.Println("end")
