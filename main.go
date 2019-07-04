@@ -40,6 +40,10 @@ func flags() string {
 	// }
 
 	if *fl {
+		if runtime.GOOS == "windows" {
+			return `-ldflags -s`
+		}
+
 		return `-ldflags "-s -w"`
 	}
 
