@@ -13,6 +13,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"log"
 	"runtime"
 
 	"github.com/go-vgo/gt/cmd"
@@ -67,7 +68,7 @@ var (
 )
 
 func run(name string) {
-	fmt.Println("build c-shared start...")
+	log.Println("build c-shared start...")
 
 	str := "go build " + all() + flags() + " -o " + name + so() +
 		" -buildmode=c-shared " + name + ".go"
@@ -77,7 +78,7 @@ func run(name string) {
 	fmt.Println("cmd.Run err is: ", out, e, err)
 	// }
 
-	fmt.Println("end")
+	log.Println("end")
 }
 
 func main() {
