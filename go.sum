@@ -1,2 +1,2 @@
-github.com/go-vgo/gt/cmd v0.0.0-20190404142521-9e923cadcb68 h1:6nhhOR1E1j22dy5H9yHyg42S+F1yZcckGkbS8XrFUnY=
-github.com/go-vgo/gt/cmd v0.0.0-20190404142521-9e923cadcb68/go.mod h1:DBL19zgmMWwERYGI9Nb/X1C5noSkj+Hw8qtQCNPhVr0=
+github.com/go-vgo/gt/cmd v0.0.0-20200510160325-066fa367365f h1:H9uasM+uSo0mReLjKMThtVo1FXc0L6eZeuPwpGXx+GE=
+github.com/go-vgo/gt/cmd v0.0.0-20200510160325-066fa367365f/go.mod h1:DBL19zgmMWwERYGI9Nb/X1C5noSkj+Hw8qtQCNPhVr0=
